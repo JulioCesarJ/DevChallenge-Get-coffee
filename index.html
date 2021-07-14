@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-grid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
@@ -17,30 +17,35 @@
         </div>
         <nav class="menu">
             <ul class="navbar">
-                <li>menu</li>
-                <li>contact</li>
-                <li>find us</li>
+                <li><a>menu</a></li>
+                <li><a>contact</a></li>
+                <li><a>find us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="conteudo">
-                <div class="txt">
-                    <p>The best way to get your coffee <br> without leaving the comfort <br> of your house</p>
-                </div>
-                <div class="button">
-                    <button>make your order</button>
-                </div>
+    <main id="container">
+        <section id="conteudo">
+            <div class="txt">
+                <p>The best way to get your coffee <br> without leaving the comfort <br> of your house</p>
+                <button>make your order</button>
+            </div>
+            <div class="redes-sociais">
+                <ul>
+                    <li><img src="assets/instagram.svg" alt=""></li>
+                    <li><img src="assets/linkedin.svg" alt=""></li>
+                    <li><img src="assets/twitter.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section id="container-cup">
+            <img src="assets/copo.svg" alt="">
         </section>
     </main>
-    <footer>
-        <div class="redes-sociais">
-            <ul>
-                <li><img src="assets/instagram.svg" alt=""></li>
-                <li><img src="assets/linkedin.svg" alt=""></li>
-                <li><img src="assets/twitter.svg" alt=""></li>
-            </ul>
-        </div>
+    <footer id="footer">
+        <section class="scroll">
+            <h2>scroll down</h2>
+            <img src="assets/scroll.svg" alt="">
+        </section>
     </footer>
 </body>
 </html>

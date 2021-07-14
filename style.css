@@ -1,100 +1,239 @@
-/* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*==== RESET ============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 16px; */
 }
 
 body {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-header{
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    font-size: 0.88rem;
-}
+/*==== MOBILE ============*/
+@media (max-width: 768px) {
 
-main{
+  main {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
-}
+  }
 
-/* Header */
-#header{
-    width: auto;
+  /* Header */
+  #header {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 0.88rem;
     height: 5.62rem;
     box-shadow: 0px 1px 8px rgba(36, 36, 36, 0.15);
     /* background-color: gray; */
-}
+  }
 
-/* Logo */
-.logo{
+  /* Logo */
+  .logo {
     display: flex;
     padding-top: 0.812rem;
     justify-content: center;
-}
+  }
 
-/* Menu */
+  .logo img {
+    width: 9.375rem;
+    height: auto;
+  }
 
-.navbar{
+  /* Menu */
+
+  .navbar {
     display: flex;
-    margin: 0.563rem 5.812rem 1.0rem;
+    margin: 0.563rem 5.812rem 1rem;
     justify-content: space-between;
-}
+  }
 
-.navbar li{
-    display: inline;
-}
+  .navbar li {
+    list-style-type: none;
+  }
 
-/* Conteudo main */
+  /* Conteudo main */
 
-
-
-.conteudo{
+  .conteudo {
     margin: 8.312rem 0.687rem auto 0.687rem;
     justify-content: center;
-}
+  }
 
-.txt{
+  .txt {
     display: flex;
-    margin-bottom: 3.312rem;
+    margin-bottom: 2rem;
     justify-content: center;
     text-align: center;
-}
+  }
 
-.button{
+  .button {
     display: flex;
     justify-content: center;
-}
+  }
 
-.button button {
+  .cup {
+    display: none;
+  }
+
+  .button button {
     width: 14.937rem;
     height: 3.062rem;
     border-radius: 0.3125rem;
     border: none;
     color: white;
-    font-family: "Nunito" , sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.125rem;
     font-weight: bold;
-    background-color: #FCA60F;
-}
+    background-color: #fca60f;
+  }
 
-/* Rodape */
+  /* Rodape */
 
-/* redes sociais */
+  /* redes sociais */
 
-.redes-sociais{
+  .redes-sociais {
     display: flex;
     justify-content: center;
-}
+  }
 
-.redes-sociais ul{
+  .redes-sociais ul {
     display: flex;
-    margin-top: 10rem;
+    margin-top: 8rem;
     width: 6.588rem;
     list-style: none;
     justify-content: space-between;
+  }
+
+  .scroll {
+    display: none;
+  }
+}
+
+/*==== DESKTOP ============*/
+
+@media (min-width: 720px) {
+  header {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 0.88rem;
+  }
+
+  main {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  /* Header */
+  #header {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 5.937rem;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(36, 36, 36, 0.15);
+  }
+
+  .conteudo-header {
+    display: flex;
+    width: 69.687rem;
+    /* background-color: red; */
+    
+    justify-content: space-between;
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+    width: max-content;
+    padding-top: 0.812rem;
+    /* background-color: blue; */
+  }
+
+  .logo img {
+    width: 9.375rem;
+    height: auto;
+  }
+
+  /* Menu */
+
+  .navbar {
+    display: flex;
+    width: 17.562rem;
+    height: 1.562rem;
+    margin: 2.187rem 5.812rem 1rem;
+    /* background-color: blue; */
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Conteudo main */
+  
+  main{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 16rem; 
+    width: max-content;
+  }
+
+  .conteudo{
+    margin-top: 12.937rem;
+  }
+
+  .txt {
+    width: 34rem;
+    text-align: left;
+    margin-bottom: 5rem;
+    font-size: 2.25rem;
+  }
+
+  .button button {
+    width: 14.937rem;
+    height: 3.062rem;
+    border-radius: 0.3125rem;
+    border: none;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    background-color: #fca60f;
+  }
+
+  .container-cup {
+    display: flex;
+    margin-top: 11.75rem;
+    margin-left: 21.687rem;
+    margin-right: 14rem;
+  }
+
+  /* Rodape */
+
+  /* redes sociais */
+
+  .redes-sociais {
+    display: flex;
+    padding-left: 16rem; 
+  }
+
+  .redes-sociais ul {
+    display: flex;
+    margin-top: 2.008rem;
+    width: 6.588rem;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .scroll{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 7.071rem;
+    margin-bottom: 5.187rem;
+  }
 }

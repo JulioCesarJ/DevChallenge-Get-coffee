@@ -1,0 +1,251 @@
+/*==== RESET ============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Nunito';
+  font-weight: bold;
+}
+
+:root{
+  --cinza: #E7E6E6;
+  --amarelo: #FCA60F;
+  --branco: #fff;
+}
+
+/* === MOBILE ===== */
+
+/* === CSS GRID ===== */
+@media (max-width: 1000px) {
+  
+
+  body {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5.62rem 31.25rem 1fr;
+    grid-area: 'header' 'main' 'footer';
+  }
+
+  #header{
+    grid-area: 'header';
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #main{
+    grid-area: 'main';
+  }
+
+  #footer{
+    grid-area: 'footer';
+  }
+
+  /* Display None Cup e Scroll*/
+
+  #container-cup, .scroll {
+    display: none;
+  }
+
+  /*=== HEADER ==== */
+
+  /* Logo */
+  .logo {
+    width: max-content;
+    margin: 13px auto 9px;
+  }
+
+  /* Navegação */
+
+  .navbar{
+    display: flex;
+    margin: 0 auto;
+    width: 11.875rem;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  /* === MAIN ==== */
+
+  /* Conteudo */
+
+  .txt{
+    margin: 133px auto 53px;
+    width: 354px;
+    text-align: center;
+  }
+
+  .txt p{
+    font-size: 1.3rem;
+  }
+
+  .txt button{
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 239px;
+    height: 49px;
+    margin: 0 auto;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border-radius: 5px;
+    border: none;
+  }
+
+  /*=== Footer */
+
+  /* .redes-sociais{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 311px;
+  } */
+
+  .redes-sociais ul {
+    display: flex;
+    justify-content: space-between;
+    width: 6.625rem;
+    margin: 0 auto;
+  }
+
+  .redes-sociais ul li {
+    display: inline-block;
+  }
+}
+
+
+/* =============================================================================== */
+
+
+/* === DESKTOP ===== */
+
+/* === CSS GRID ===== */
+@media (min-width:1000px) {
+  
+  body {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-area: 'header' 'container' 'footer';
+  }
+
+  #header{
+    grid-area: 'header';
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    /* background-color: blue; */
+  }
+
+  #container{
+    grid-area: 'container';
+    /* background-color: red; */
+  }
+
+  #footer{
+    grid-area: 'footer';
+    /* background-color: chartreuse; */
+  }
+
+  /*=== HEADER ==== */
+
+  /* Logo */
+  .logo {
+    margin: 0;
+    padding: 0;
+    height: 37px;
+  }
+
+  .logo img {
+    height: max-content;
+  }
+
+  /* Navegação */
+
+  #header{
+    display: flex;
+    padding: 29px 160px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar{
+    display: flex;
+    width: 11.875rem;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    display: block;
+    text-decoration: none;
+  }
+
+  /* === MAIN ==== */
+
+  /* Conteudo */
+
+  #container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 73vw;
+  }
+
+  #conteudo{
+    margin-top: 203px;
+  }
+  .txt p{
+    font-size: 2.25rem;
+  }
+
+  .txt > button{
+    font-size: 1.25rem;
+    width: 239px;
+    height: 49px;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border-radius: 5px;
+    border: none;
+    margin-top: 80px;
+  }
+
+  /* Redes-Sociais */
+
+  .redes-sociais{
+    margin-top: 32px;
+  }
+
+  .redes-sociais ul{
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+    height: 24px;
+  }
+
+  .redes-sociais li{
+    display: block;
+    width: max-content;
+    height: max-content;
+  }
+
+  /* Copo */
+
+  #container-cup{
+    display: flex;
+  }
+
+  /* Rodape */
+
+  #footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
